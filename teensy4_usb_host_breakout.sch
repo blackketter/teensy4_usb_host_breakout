@@ -33,6 +33,7 @@ F 0 "J2" H 7420 3589 50  0000 R CNN
 F 1 "USB_A" H 7420 3498 50  0000 R CNN
 F 2 "USB_A_Receptacle_SMD_Wuerth_629104190121:USB_A_Receptacle_SMD_Wuerth_629104190121" H 7800 3550 50  0001 C CNN
 F 3 " ~" H 7800 3550 50  0001 C CNN
+F 4 "732-11179-1-ND" H 7650 3600 50  0001 C CNN "Digikey"
 	1    7650 3600
 	-1   0    0    -1  
 $EndComp
@@ -56,6 +57,7 @@ F 0 "U1" H 6300 3867 50  0000 C CNN
 F 1 "TPD3S014" H 6300 3776 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6300 3850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tpd3s014.pdf" H 6100 3750 50  0001 C CNN
+F 4 "296-38835-1-ND" H 6300 3500 50  0001 C CNN "Digikey"
 	1    6300 3500
 	1    0    0    -1  
 $EndComp
@@ -67,6 +69,7 @@ F 0 "R1" H 5068 3746 50  0000 L CNN
 F 1 "100k" H 5068 3655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5000 3700 50  0001 C CNN
 F 3 "~" H 5000 3700 50  0001 C CNN
+F 4 "311-100KCRCT-ND" H 5000 3700 50  0001 C CNN "Digikey"
 	1    5000 3700
 	1    0    0    -1  
 $EndComp
@@ -144,6 +147,7 @@ F 0 "C2" H 5765 4396 50  0000 L CNN
 F 1 "100u" H 5765 4305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5650 4350 50  0001 C CNN
 F 3 "~" H 5650 4350 50  0001 C CNN
+F 4 "‎478-12404-1-ND‎" H 5650 4350 50  0001 C CNN "Digikey"
 	1    5650 4350
 	1    0    0    -1  
 $EndComp
@@ -155,6 +159,7 @@ F 0 "C1" H 5065 4396 50  0000 L CNN
 F 1 "2u2" H 5065 4305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4950 4350 50  0001 C CNN
 F 3 "~" H 4950 4350 50  0001 C CNN
+F 4 "1276-1188-1-ND" H 4950 4350 50  0001 C CNN "Digikey"
 	1    4950 4350
 	1    0    0    -1  
 $EndComp
@@ -194,35 +199,12 @@ F 0 "F1" V 3950 3400 50  0000 C CNN
 F 1 "500mA" V 4150 3400 50  0000 C CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4100 3200 50  0001 L CNN
 F 3 "~" H 4050 3400 50  0001 C CNN
+F 4 "507-1813-1-ND" V 4050 3400 50  0001 C CNN "Digikey"
 	1    4050 3400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3400 3400 3950 3400
-$Comp
-L Device:D_Small D2
-U 1 1 5D862829
-P 5150 3400
-F 0 "D2" H 5200 3500 50  0000 C CNN
-F 1 "1A" H 5050 3500 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5150 3400 50  0001 C CNN
-F 3 "~" V 5150 3400 50  0001 C CNN
-	1    5150 3400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D_Small D1
-U 1 1 5D863E89
-P 5150 3250
-F 0 "D1" H 5200 3150 50  0000 C CNN
-F 1 "1A" H 5050 3150 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5150 3250 50  0001 C CNN
-F 3 "~" V 5150 3250 50  0001 C CNN
-	1    5150 3250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4700 3400 5050 3400
 $Comp
 L Device:L_Small L1
 U 1 1 5D865DA5
@@ -231,19 +213,14 @@ F 0 "L1" V 4785 3400 50  0000 C CNN
 F 1 "ferrite 150" V 4694 3400 50  0000 C CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4600 3400 50  0001 C CNN
 F 3 "~" H 4600 3400 50  0001 C CNN
+F 4 "‎490-1038-1-ND‎" V 4600 3400 50  0001 C CNN "Digikey"
 	1    4600 3400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4150 3400 4500 3400
 Wire Wire Line
-	5050 3250 5050 3400
-Connection ~ 5050 3400
-Wire Wire Line
-	5250 3250 5250 3400
-Wire Wire Line
 	5900 3400 5600 3400
-Connection ~ 5250 3400
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5D870030
@@ -319,7 +296,7 @@ F 3 "~" H 5600 3400 50  0001 C CNN
 	1    5600 3400
 	1    0    0    -1  
 $EndComp
-Connection ~ 5600 3400
 Wire Wire Line
-	5600 3400 5250 3400
+	4700 3400 5600 3400
+Connection ~ 5600 3400
 $EndSCHEMATC
