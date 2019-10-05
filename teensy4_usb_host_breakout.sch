@@ -47,7 +47,7 @@ Text Label 3400 3700 0    50   ~ 0
 GND
 Text Label 3400 3800 0    50   ~ 0
 GND
-Text Label 4100 3900 0    50   ~ 0
+Text Label 3400 3900 0    50   ~ 0
 27
 $Comp
 L Power_Protection:TPD3S014 U1
@@ -61,33 +61,8 @@ F 4 "296-38835-1-ND" H 6300 3500 50  0001 C CNN "Digikey"
 	1    6300 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small_US R1
-U 1 1 5D85600F
-P 5000 3700
-F 0 "R1" H 5068 3746 50  0000 L CNN
-F 1 "100k" H 5068 3655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5000 3700 50  0001 C CNN
-F 3 "~" H 5000 3700 50  0001 C CNN
-F 4 "311-100KCRCT-ND" H 5000 3700 50  0001 C CNN "Digikey"
-	1    5000 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 3600 5900 3600
 Wire Wire Line
 	3400 3700 3400 3800
-$Comp
-L power:GND #PWR0101
-U 1 1 5D857668
-P 5000 3800
-F 0 "#PWR0101" H 5000 3550 50  0001 C CNN
-F 1 "GND" H 5005 3627 50  0000 C CNN
-F 2 "" H 5000 3800 50  0001 C CNN
-F 3 "" H 5000 3800 50  0001 C CNN
-	1    5000 3800
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5D8576BB
@@ -102,13 +77,6 @@ $EndComp
 Wire Wire Line
 	3400 3700 3750 3700
 Connection ~ 3400 3700
-Wire Wire Line
-	3400 3900 4150 3900
-Wire Wire Line
-	4500 3900 4500 3600
-Wire Wire Line
-	4500 3600 5000 3600
-Connection ~ 5000 3600
 Wire Wire Line
 	6950 3600 6950 3700
 Wire Wire Line
@@ -220,20 +188,9 @@ $EndComp
 Wire Wire Line
 	4150 3400 4500 3400
 Wire Wire Line
-	5900 3400 5600 3400
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5D870030
-P 4300 3900
-F 0 "JP1" H 4300 4105 50  0000 C CNN
-F 1 "EN" H 4300 4014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4300 3900 50  0001 C CNN
-F 3 "~" H 4300 3900 50  0001 C CNN
-	1    4300 3900
-	1    0    0    -1  
-$EndComp
+	5900 3400 5550 3400
 Wire Wire Line
-	4450 3900 4500 3900
+	5200 3600 5550 3600
 Text Label 6700 3500 0    50   ~ 0
 D+
 Text Label 6700 3600 0    50   ~ 0
@@ -288,15 +245,61 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5D8737A7
-P 5600 3400
-F 0 "#FLG0103" H 5600 3475 50  0001 C CNN
-F 1 "PWR_FLAG" H 5600 3573 50  0000 C CNN
-F 2 "" H 5600 3400 50  0001 C CNN
-F 3 "~" H 5600 3400 50  0001 C CNN
-	1    5600 3400
+P 5550 3400
+F 0 "#FLG0103" H 5550 3475 50  0001 C CNN
+F 1 "PWR_FLAG" H 5550 3573 50  0000 C CNN
+F 2 "" H 5550 3400 50  0001 C CNN
+F 3 "~" H 5550 3400 50  0001 C CNN
+	1    5550 3400
 	1    0    0    -1  
 $EndComp
+Connection ~ 5550 3400
+Connection ~ 5550 3600
 Wire Wire Line
-	4700 3400 5600 3400
-Connection ~ 5600 3400
+	5550 3600 5900 3600
+$Comp
+L power:GND #PWR0101
+U 1 1 5D857668
+P 5550 3800
+F 0 "#PWR0101" H 5550 3550 50  0001 C CNN
+F 1 "GND" H 5555 3627 50  0000 C CNN
+F 2 "" H 5550 3800 50  0001 C CNN
+F 3 "" H 5550 3800 50  0001 C CNN
+	1    5550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5D85600F
+P 5550 3700
+F 0 "R1" H 5618 3746 50  0000 L CNN
+F 1 "100k" H 5618 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5550 3700 50  0001 C CNN
+F 3 "~" H 5550 3700 50  0001 C CNN
+F 4 "311-100KCRCT-ND" H 5550 3700 50  0001 C CNN "Digikey"
+	1    5550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 5D98F81D
+P 5050 3600
+F 0 "JP1" V 5096 3667 50  0000 L CNN
+F 1 "EN PIN 27" V 5005 3667 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 5050 3600 50  0001 C CNN
+F 3 "~" H 5050 3600 50  0001 C CNN
+	1    5050 3600
+	0    -1   -1   0   
+$EndComp
+Text Label 5750 3600 0    50   ~ 0
+EN
+Wire Wire Line
+	5050 3900 5050 3800
+Wire Wire Line
+	5050 3400 5550 3400
+Wire Wire Line
+	4700 3400 5050 3400
+Connection ~ 5050 3400
+Wire Wire Line
+	3400 3900 5050 3900
 $EndSCHEMATC
