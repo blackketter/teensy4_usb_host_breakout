@@ -4,15 +4,16 @@ It's designed to solder to the top 6 pins on the right side of the Teensy 4 Head
 
 Designed in KiCad.
 
-![breakout render](render.png)
-![breakout render_back](render_back.png)
-
 Notes:
 
+- See also [Combo SD/USB Host breakout](https://github.com/blackketter/teensy4_combo_breakout)
 - In progress: First prototype works great.
 - With longer header pins you should be able to flip the board to be under or over the Teensy 4.0
 - Download bom/ibom.html and view it with web browser to see bill of materials and placement information.
 - The 6th pin provides an optional enable pin for the power management chip on digital pin 27.  For always-on, cut left trace and short right two pads.  
+
+![breakout render](render.png)
+![breakout render_back](render_back.png)
 
 Pinout:
 
